@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buddika | Data Scientist & ML Engineer Portfolio</title>
+  <meta name="description"
+    content="Professional portfolio of Buddika, a Data Scientist & Machine Learning Engineer specializing in predictive models, deep learning, and professional video editing.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.400.0/dist/umd/lucide.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Decorative Glowing Lights -->
+  <div class="glow-bg" style="top: 10%; left: -10%;"></div>
+  <div class="glow-bg-orange" style="top: 40%; right: -5%;"></div>
+  <div class="glow-bg" style="bottom: 10%; left: -5%;"></div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        BUDDIKA<span>.</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" id="nav-menu">
+        <a href="#about" class="nav-link" id="link-about">About</a>
+        <a href="#skills" class="nav-link" id="link-skills">Skills</a>
+        <a href="#projects" class="nav-link" id="link-projects">Projects</a>
+        <a href="#education" class="nav-link" id="link-education">Education</a>
+        <a href="#contact" class="nav-link" id="link-contact">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="hero-tag reveal">Data Science Portfolio</div>
+        <h1 class="hero-title reveal reveal-delay-1">BUDDIKA</h1>
+        <div class="hero-subtitle reveal reveal-delay-2">
+          <span>DATA SCIENTIST</span> & <span>ML ENGINEER</span>
+        </div>
+        <p class="reveal reveal-delay-3"
+          style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 2.5rem auto; font-size: 1.05rem;">
+          A developer driving the intersection of Computer Science and Applied Statistics. Focused on engineering
+          end-to-end intelligent data pipelines, optimizing neural network architectures, and implementing robust
+          predictive models rooted in mathematical theory.
+        </p>
+        <div class="hero-buttons reveal reveal-delay-4">
+          <a href="#contact" class="btn btn-primary" id="btn-hire">
+            Hire Me <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+          </a>
+          <a href="https://drive.google.com/uc?export=download&id=1kd99jnU7d5K6P089x97VOxrkkO51BvKu" target="_blank"
+            rel="noopener noreferrer" class="btn btn-secondary" id="btn-resume">
+            CV <i data-lucide="download" style="width: 18px; height: 18px;"></i>
+          </a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll Down">
+        <span>Explore</span>
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section container" id="about">
+      <h2 class="section-title reveal"><span>01.</span> About Me</h2>
+
+      <div class="about-grid">
+        <!-- Glowing Circular Profile Visual -->
+        <div class="about-visual reveal">
+          <div class="profile-glow"></div>
+          <div class="profile-container">
+            <!-- Profile Photo -->
+            <img class="profile-img" src="profile%20photo.png" alt="Buddika Profile Photo">
+          </div>
+        </div>
+
+        <!-- About Content -->
+        <div class="about-content reveal reveal-delay-1">
+          <div class="about-tagline">Hello! I'm Buddika.</div>
+          <p class="about-text">
+            I am a Data Scientist & ML Engineer operating at the intersection of Computer Science, Statistics, and
+            Mathematics. This multidisciplinary background allows me to back modern software engineering with deep
+            statistical rigor, whether I am crafting scalable predictive models or extracting insights from massive,
+            complex datasets.
+          </p>
+          <p class="about-text">
+            My experience bridges rigorous mathematical theory and modern software engineering, spanning from building
+            advanced convolutional architectures to setting up distributed databases and optimizing model performance.
+          </p>
+
+          <!-- Key Statistics Grid -->
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">6</span>
+              <span class="stat-label">ML Projects Built</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Years of Coding</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">90</span>
+              <span class="stat-label">Model Accuracy (%)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <section class="section container" id="skills">
+      <h2 class="section-title reveal"><span>02.</span> Skills & Tools</h2>
+
+      <div class="skills-grid">
+        <!-- Python -->
+        <div class="card-wrapper reveal">
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-container">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.95 2c-2.6 0-4.7 2-4.7 4.5v1.8h4.8v.7H5.25c-1.8 0-3.3 1.4-3.3 3.2v3.7c0 1.8 1.5 3.3 3.3 3.3h1.8v-2.5c0-1.8 1.5-3.3 3.3-3.3h4.8v-2.1c0-2.5-2.1-4.5-4.7-4.5h-.8v1c0 1-.8 1.8-1.8 1.8s-1.8-.8-1.8-1.8V6.5c0-1.4 1.1-2.5 2.5-2.5h2.3V2h-1.3zM8.3 4.8c.4 0 .7.3.7.7s-.3.7-.7.7-.7-.3-.7-.7.3-.7.7-.7z" />
+                  <path
+                    d="M12.05 22c2.6 0 4.7-2 4.7-4.5v-1.8h-4.8v-.7h6.8c1.8 0 3.3-1.4 3.3-3.2v-3.7c0-1.8-1.5-3.3-3.3-3.3h-1.8v2.5c0 1.8-1.5 3.3-3.3 3.3h-4.8v2.1c0 2.5 2.1 4.5 4.7 4.5h.8v-1c0-1 .8-1.8 1.8-1.8s1.8.8 1.8 1.8v1.1c0 1.4-1.1 2.5-2.5 2.5h-2.3V22h1.3zm3.7-2.8c-.4 0-.7-.3-.7-.7s.3-.7.7-.7.7.3.7.7-.3.7-.7.7z"
+                    opacity="0.8" />
+                </svg>
+              </div>
+              <h3 class="skill-title">Python</h3>
+            </div>
+            <p class="skill-desc">
+              My primary language for building models, scraping data, scripting automation, and deploying AI solutions
+              using TensorFlow, PyTorch, Pandas, and NumPy.
+            </p>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-progress="95%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Java -->
+        <div class="card-wrapper reveal reveal-delay-1">
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-container">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
+                  <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
+                  <line x1="6" x2="14" y1="2" y2="2" />
+                  <path d="M6 12a3 3 0 0 1 3-3" />
+                </svg>
+              </div>
+              <h3 class="skill-title">Java</h3>
+            </div>
+            <p class="skill-desc">
+              Utilized for building enterprise-grade backend infrastructure, distributed data ingest networks, and
+              custom Android integration routines.
+            </p>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-progress="80%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- R -->
+        <div class="card-wrapper reveal reveal-delay-2">
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-container">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="12" cy="12" rx="10" ry="7" stroke-dasharray="2 2" opacity="0.5" />
+                  <path d="M9 16V8h4.5a2.5 2.5 0 1 1 0 5H9m0 0l5 3" />
+                </svg>
+              </div>
+              <h3 class="skill-title">R</h3>
+            </div>
+            <p class="skill-desc">
+              Utilized for comprehensive dataset analysis, statistical computing, and developing custom neural network
+              architectures. Integrated with advanced visualizations (using ggplot2) to evaluate model performance and
+              interpret data trends.
+            </p>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-progress="75%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQL -->
+        <div class="card-wrapper reveal">
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-container">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                  <path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6" />
+                </svg>
+              </div>
+              <h3 class="skill-title">SQL</h3>
+            </div>
+            <p class="skill-desc">
+              Expertise in relational database schema design, indexing, and writing highly optimized queries across
+              PostgreSQL, MySQL, and BigQuery.
+            </p>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-progress="90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="card-wrapper reveal reveal-delay-1">
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-container">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="4" width="16" height="16" rx="2" />
+                  <rect x="9" y="9" width="6" height="6" />
+                  <line x1="9" x2="9" y1="1" y2="4" />
+                  <line x1="15" x2="15" y1="1" y2="4" />
+                  <line x1="9" x2="9" y1="20" y2="23" />
+                  <line x1="15" x2="15" y1="20" y2="23" />
+                  <line x1="20" x2="23" y1="9" y2="9" />
+                  <line x1="20" x2="23" y1="15" y2="15" />
+                  <line x1="1" x2="4" y1="9" y2="9" />
+                  <line x1="1" x2="4" y1="15" y2="15" />
+                </svg>
+              </div>
+              <h3 class="skill-title">Machine Learning</h3>
+            </div>
+            <p class="skill-desc">
+              Training regression, random forests, reinforcement algorithms, and deep neural nets for predictive
+              analysis, NLP, and computer vision.
+            </p>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-progress="95%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Editing & Post-Production -->
+        <div class="card-wrapper reveal reveal-delay-2">
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-container">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.2 6 3 11s-.9-2.1-.2-2.8c.7-.7 2-.2 2-.2L18.4 4c.8-.3 2.1-.2 2.6.5.5.7.1 2.1-.8 2.1Z" />
+                  <path d="M4 11v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9" />
+                  <path d="M9 15.5v4" />
+                  <path d="M15 15.5v4" />
+                  <path d="M9 11v4.5" />
+                  <path d="M15 11v4.5" />
+                  <path d="M4 15h16" />
+                </svg>
+              </div>
+              <h3 class="skill-title">Video Editing</h3>
+            </div>
+            <p class="skill-desc">
+              Creating and editing high-quality video content using Adobe Premiere Pro and Filmora, specializing in
+              timing, pacing, transitions, color grading, and audio syncing.
+            </p>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-progress="95%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Extra Skills (Technical Focus & Soft Skills) -->
+      <div class="skills-extra-grid reveal" style="margin-top: 4rem;">
+        <!-- Technical Focus Card -->
+        <div class="card-wrapper">
+          <div class="extra-skills-card">
+            <h3 class="extra-skills-title">Technical Focus</h3>
+            <div class="badges-grid">
+              <span class="skill-badge">Machine Learning</span>
+              <span class="skill-badge">Agentic AI</span>
+              <span class="skill-badge">Mobile App Dev</span>
+              <span class="skill-badge">Web Development</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills Card -->
+        <div class="card-wrapper">
+          <div class="extra-skills-card">
+            <h3 class="extra-skills-title">Soft Skills</h3>
+            <div class="badges-grid">
+              <span class="skill-badge">Leadership</span>
+              <span class="skill-badge">Teamwork</span>
+              <span class="skill-badge">Time Management</span>
+              <span class="skill-badge">Effective Communication</span>
+              <span class="skill-badge">Critical Thinking</span>
+              <span class="skill-badge">Discipline</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section container" id="projects">
+      <h2 class="section-title reveal"><span>03.</span> Featured Projects</h2>
+
+      <div class="projects-grid">
+        <!-- Project 1: CKD Early Detection & Stage Monitoring -->
+        <div class="card-wrapper reveal">
+          <div class="project-card">
+            <div class="project-visual">
+              <svg class="project-svg" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+                <!-- Kidney outline -->
+                <path
+                  d="M80,30 C60,30 45,45 45,60 C45,80 60,95 80,95 C90,95 95,85 100,75 C105,85 110,95 120,95 C140,95 155,80 155,60 C155,45 140,30 120,30 C110,30 105,40 100,50 C95,40 90,30 80,30Z"
+                  fill="none" stroke="var(--color-neon-red)" stroke-width="2.5"
+                  filter="drop-shadow(0 0 5px var(--color-neon-red))" />
+                <!-- Stage indicators (5 dots) -->
+                <circle cx="170" cy="30" r="5" fill="var(--color-neon-orange)"
+                  filter="drop-shadow(0 0 4px var(--color-neon-orange))" opacity="0.4" />
+                <circle cx="185" cy="45" r="5" fill="var(--color-neon-orange)"
+                  filter="drop-shadow(0 0 4px var(--color-neon-orange))" opacity="0.55" />
+                <circle cx="195" cy="60" r="5" fill="var(--color-neon-orange)"
+                  filter="drop-shadow(0 0 4px var(--color-neon-orange))" opacity="0.7" />
+                <circle cx="200" cy="77" r="5" fill="var(--color-neon-red)"
+                  filter="drop-shadow(0 0 4px var(--color-neon-red))" opacity="0.85" />
+                <circle cx="200" cy="95" r="6" fill="#fff" stroke="var(--color-neon-red)" stroke-width="2"
+                  filter="drop-shadow(0 0 6px var(--color-neon-red))" />
+                <!-- Heartbeat line -->
+                <path d="M20,60 L35,60 L40,45 L48,75 L55,55 L60,60 L75,60" fill="none" stroke="rgba(255,122,0,0.4)"
+                  stroke-width="1.5" stroke-dasharray="3" />
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Scikit-Learn</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">Flask</span>
+              </div>
+              <h3 class="project-title">Early Detection of Chronic Kidney Disease</h3>
+              <p class="project-desc">
+                Final Year Research — selected as one of the top 10 projects at INNORBIT Project Carnival-2026.
+                AI-driven 5-stage CKD classification with longitudinal patient tracking, dual portals for Patients &
+                Doctors, defensive biomarker validation, and a secure 3NF MySQL database with Role-Based Access Control.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Code"><i data-lucide="github"></i> Code</a>
+                <a href="#" class="project-link" aria-label="Launch Live App"><i data-lucide="external-link"></i> Live
+                  Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Snake Species Deep Learning Classifier -->
+        <div class="card-wrapper reveal reveal-delay-1">
+          <div class="project-card">
+            <div class="project-visual">
+              <svg class="project-svg" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+                <!-- Snake body curve -->
+                <path d="M30,80 C50,80 55,40 80,40 C105,40 100,80 120,80 C140,80 140,35 165,35 C185,35 190,60 200,60"
+                  fill="none" stroke="var(--color-neon-orange)" stroke-width="3" stroke-linecap="round"
+                  filter="drop-shadow(0 0 5px var(--color-neon-orange))" />
+                <!-- Snake head -->
+                <circle cx="205" cy="58" r="6" fill="var(--color-neon-orange)"
+                  filter="drop-shadow(0 0 6px var(--color-neon-orange))" />
+                <circle cx="208" cy="56" r="2" fill="#fff" />
+                <!-- Upload frame -->
+                <rect x="20" y="15" width="45" height="35" rx="4" fill="none" stroke="#2a2a35" stroke-width="2" />
+                <path d="M42 38 L42 25 M36 31 L42 25 L48 31" fill="none" stroke="var(--color-neon-red)" stroke-width="2"
+                  stroke-linecap="round" filter="drop-shadow(0 0 3px var(--color-neon-red))" />
+                <!-- Classification result -->
+                <rect x="170" y="80" width="55" height="25" rx="4" fill="none" stroke="var(--color-neon-red)"
+                  stroke-width="1.5" filter="drop-shadow(0 0 3px var(--color-neon-red))" />
+                <text x="197" y="96" text-anchor="middle" fill="var(--color-neon-red)" font-size="8"
+                  font-family="monospace">PREDICT</text>
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">R Studio</span>
+                <span class="project-tag">Deep Learning</span>
+                <span class="project-tag">Shiny</span>
+              </div>
+              <h3 class="project-title">Snake Species Image Classifier</h3>
+              <p class="project-desc">
+                An interactive deep learning web app built with R Studio. Trained and evaluated a classification model
+                on a public dataset of snake images. Users can seamlessly upload a snake image and receive a real-time
+                species prediction.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Code"><i data-lucide="github"></i> Code</a>
+                <a href="#" class="project-link" aria-label="Launch Live App"><i data-lucide="external-link"></i> Live
+                  Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Garbage Classification AI -->
+        <div class="card-wrapper reveal reveal-delay-2">
+          <div class="project-card">
+            <div class="project-visual">
+              <svg class="project-svg" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+                <!-- Recycle arrows symbol -->
+                <path d="M100,35 L120,20 L140,35" fill="none" stroke="var(--color-neon-orange)" stroke-width="2.5"
+                  stroke-linecap="round" filter="drop-shadow(0 0 4px var(--color-neon-orange))" />
+                <path d="M140,35 L145,55 L130,70" fill="none" stroke="var(--color-neon-orange)" stroke-width="2.5"
+                  stroke-linecap="round" filter="drop-shadow(0 0 4px var(--color-neon-orange))" />
+                <path d="M130,70 L110,70 L100,55" fill="none" stroke="var(--color-neon-orange)" stroke-width="2.5"
+                  stroke-linecap="round" filter="drop-shadow(0 0 4px var(--color-neon-orange))" />
+                <path d="M100,55 L100,35" fill="none" stroke="var(--color-neon-orange)" stroke-width="2.5"
+                  stroke-linecap="round" filter="drop-shadow(0 0 4px var(--color-neon-orange))" />
+                <!-- Bin left (recyclable) -->
+                <rect x="25" y="55" width="30" height="40" rx="3" fill="none" stroke="var(--color-neon-red)"
+                  stroke-width="2" filter="drop-shadow(0 0 3px var(--color-neon-red))" />
+                <line x1="30" y1="55" x2="30" y2="50" stroke="var(--color-neon-red)" stroke-width="1.5" />
+                <line x1="50" y1="55" x2="50" y2="50" stroke="var(--color-neon-red)" stroke-width="1.5" />
+                <line x1="28" y1="50" x2="52" y2="50" stroke="var(--color-neon-red)" stroke-width="1.5" />
+                <text x="40" y="80" text-anchor="middle" fill="var(--color-neon-red)" font-size="7"
+                  font-family="monospace">YES</text>
+                <!-- Bin right (non-recyclable) -->
+                <rect x="185" y="55" width="30" height="40" rx="3" fill="none" stroke="#2a2a35" stroke-width="2" />
+                <line x1="190" y1="55" x2="190" y2="50" stroke="#2a2a35" stroke-width="1.5" />
+                <line x1="210" y1="55" x2="210" y2="50" stroke="#2a2a35" stroke-width="1.5" />
+                <line x1="188" y1="50" x2="212" y2="50" stroke="#2a2a35" stroke-width="1.5" />
+                <text x="200" y="80" text-anchor="middle" fill="#4a5568" font-size="7" font-family="monospace">NO</text>
+                <!-- Arrow left -->
+                <path d="M105,50 L60,55" fill="none" stroke="rgba(255,0,60,0.3)" stroke-width="1.5"
+                  stroke-dasharray="4" />
+                <!-- Arrow right -->
+                <path d="M135,50 L180,55" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"
+                  stroke-dasharray="4" />
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">TensorFlow</span>
+                <span class="project-tag">CNN</span>
+              </div>
+              <h3 class="project-title">Garbage Classification AI</h3>
+              <p class="project-desc">
+                An image classification AI model that identifies recyclable vs. non-recyclable waste from images to
+                enhance waste management processes. Built with convolutional neural networks for accurate, real-time
+                sorting predictions.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Code"><i data-lucide="github"></i> Code</a>
+                <a href="#" class="project-link" aria-label="Launch Live App"><i data-lucide="external-link"></i> Live
+                  Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Timeline Section -->
+    <section class="section container" id="education">
+      <h2 class="section-title reveal"><span>04.</span> Education History</h2>
+
+      <div class="timeline-container">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">BSc in Applied Sciences (Physical Science)</h3>
+                <div class="timeline-inst">Rajarata University of Sri Lanka</div>
+              </div>
+              <span class="timeline-date">2022 - Present (Undergraduate)</span>
+            </div>
+            <p class="timeline-desc">
+              Bachelor of Science Undergrad in Computer Science, Statistics, and Applied Mathematics (Expected
+              Graduation: [2026]). Building a rigorous theoretical and analytical foundation by applying
+              mathematical theories, numerical analysis, and statistical methods directly to machine learning
+              architectures, statistical modeling, and advanced data science applications.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">ICT Technician (Full-Time Course)</h3>
+                <div class="timeline-inst">National Youth Services Council (NYSC)</div>
+              </div>
+              <span class="timeline-date">Completed</span>
+            </div>
+            <p class="timeline-desc" style="margin-bottom: 0.75rem;">
+              <strong>System Administration & Networking:</strong> Installed and configured operating systems; conducted
+              network installations and troubleshooting.
+            </p>
+            <p class="timeline-desc" style="margin-bottom: 0.75rem;">
+              <strong>Data & Productivity Systems:</strong> Maintained files and databases while leveraging productivity
+              software for efficient workflow management.
+            </p>
+            <p class="timeline-desc">
+              <strong>Development & Design:</strong> Built basic software solutions, developed static web pages, and
+              designed digital graphics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section container" id="contact">
+      <h2 class="section-title reveal"><span>05.</span> Get In Touch</h2>
+
+      <div class="contact-grid">
+        <!-- Contact Details -->
+        <div class="contact-info reveal">
+          <div class="contact-header-text">
+            <p class="contact-subtitle">
+              Have an interesting project, job opportunity, or simply want to chat about Machine Learning and AI? Feel
+              free to drop a message. I am always open to new connections and collaborations.
+            </p>
+          </div>
+
+          <div class="contact-details">
+            <!-- Email -->
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <i data-lucide="mail" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div>
+                <div class="contact-label">Email</div>
+                <a href="mailto:buddikasampathwork@gmail.com" class="contact-value">buddikasampathwork@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <i data-lucide="map-pin" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div>
+                <div class="contact-label">Location</div>
+                <span class="contact-value">Minikandala, Morapitiya, Baduraliya</span>
+              </div>
+            </div>
+
+            <!-- Availability -->
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <i data-lucide="briefcase" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div>
+                <div class="contact-label">Availability</div>
+                <span class="contact-value">Open to Remote Opportunities</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="contact-socials">
+            <a href="https://github.com/buddikaworkdev" target="_blank" rel="noopener noreferrer" class="social-btn"
+              aria-label="GitHub Profile"><i data-lucide="github"></i></a>
+            <a href="https://www.linkedin.com/in/buddika-sampathb114733b0" target="_blank" rel="noopener noreferrer"
+              class="social-btn" aria-label="LinkedIn Profile"><i data-lucide="linkedin"></i></a>
+            <a href="https://wa.me/94704603589" target="_blank" rel="noopener noreferrer" class="social-btn"
+              aria-label="WhatsApp Contact"><i data-lucide="message-circle"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container reveal reveal-delay-1">
+          <form id="contact-form">
+            <!-- Name Input -->
+            <div class="form-group">
+              <input type="text" name="name" id="form-name" class="form-input" placeholder=" " required>
+              <label for="form-name" class="form-label">Your Name</label>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+              <input type="email" name="email" id="form-email" class="form-input" placeholder=" " required>
+              <label for="form-email" class="form-label">Your Email</label>
+            </div>
+
+            <!-- Subject Input -->
+            <div class="form-group">
+              <input type="text" name="subject" id="form-subject" class="form-input" placeholder=" " required>
+              <label for="form-subject" class="form-label">Subject</label>
+            </div>
+
+            <!-- Message Textarea -->
+            <div class="form-group">
+              <textarea name="message" id="form-message" class="form-textarea" placeholder=" " required></textarea>
+              <label for="form-message" class="form-label">Message</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary" id="form-submit" style="width: 100%;">
+              Send Message <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+            </button>
+
+            <!-- Form Status Feedback -->
+            <div class="form-status" id="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        BUDDIKA<span>.</span>
+      </div>
+      <p class="footer-text">
+        &copy; 2026 Buddika. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
