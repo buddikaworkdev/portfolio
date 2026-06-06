@@ -1458,6 +1458,18 @@ ul {
   transition-delay: 0.4s;
 }
 
+/* Project Image Hover Effects */
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-slow);
+}
+
+.card-wrapper:hover .project-img {
+  transform: scale(1.05);
+}
+
 /* ==========================================================================
    Responsive Media Queries
    ========================================================================== */
