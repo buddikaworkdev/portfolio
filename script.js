@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  
+
   // ==========================================================================
   // Initialize Lucide Icons
   // ==========================================================================
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Active Navigation Link on Scroll (Scrollspy)
   // ==========================================================================
   const sections = document.querySelectorAll('section[id]');
-  
+
   function highlightNavigation() {
     const scrollPosition = window.scrollY + 100; // Offset for navbar height
 
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
-      
+
       card.style.setProperty('--mouse-x', `${x}px`);
       card.style.setProperty('--mouse-y', `${y}px`);
     });
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================================================
   const revealElements = document.querySelectorAll('.reveal');
   const skillBars = document.querySelectorAll('.skill-bar-fill');
-  
+
   const revealObserverOptions = {
     root: null, // Viewport
     threshold: 0.15, // Trigger when 15% visible
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (contactForm && formStatus && submitBtn) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      
+
       // Select form fields
       const name = document.getElementById('form-name').value.trim();
       const email = document.getElementById('form-email').value.trim();
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const originalBtnText = submitBtn.innerHTML;
       submitBtn.innerHTML = `Sending... <i data-lucide="loader-2" class="animate-spin" style="width: 18px; height: 18px;"></i>`;
       if (typeof lucide !== 'undefined') lucide.createIcons(); // render spinner icon
-      
+
       // Send message via FormSubmit API
       fetch('https://formsubmit.co/ajax/buddikasampathwork@gmail.com', {
         method: 'POST',
@@ -180,44 +180,44 @@ document.addEventListener('DOMContentLoaded', () => {
           message: message
         })
       })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        // Restore button state
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalBtnText;
-        if (typeof lucide !== 'undefined') lucide.createIcons();
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Restore button state
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnText;
+          if (typeof lucide !== 'undefined') lucide.createIcons();
 
-        // Successful submit feedback
-        showStatus('Message sent successfully! Thank you for reaching out.', 'success');
-        
-        // Reset form inputs
-        contactForm.reset();
+          // Successful submit feedback
+          showStatus('Message sent successfully! Thank you for reaching out.', 'success');
 
-        // Clear active classes of labels (since placeholder-shown triggers again on reset)
-        document.querySelectorAll('.form-group input, .form-group textarea').forEach(el => {
-          el.blur();
+          // Reset form inputs
+          contactForm.reset();
+
+          // Clear active classes of labels (since placeholder-shown triggers again on reset)
+          document.querySelectorAll('.form-group input, .form-group textarea').forEach(el => {
+            el.blur();
+          });
+        })
+        .catch(error => {
+          // Restore button state
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnText;
+          if (typeof lucide !== 'undefined') lucide.createIcons();
+
+          showStatus('Failed to send message. Please try again later.', 'error');
         });
-      })
-      .catch(error => {
-        // Restore button state
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalBtnText;
-        if (typeof lucide !== 'undefined') lucide.createIcons();
-
-        showStatus('Failed to send message. Please try again later.', 'error');
-      });
     });
   }
 
   function showStatus(message, type) {
     formStatus.textContent = message;
     formStatus.className = `form-status ${type}`;
-    
+
     // Clear message after 5 seconds
     setTimeout(() => {
       formStatus.style.opacity = '0';

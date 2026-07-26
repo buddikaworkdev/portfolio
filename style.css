@@ -235,6 +235,7 @@ ul {
     box-shadow: 0 0 12px rgba(255, 0, 60, 0.35), inset 0 0 8px rgba(255, 0, 60, 0.15);
     border-color: var(--color-neon-red);
   }
+
   100% {
     box-shadow: 0 0 25px rgba(255, 122, 0, 0.65), inset 0 0 14px rgba(255, 122, 0, 0.3);
     border-color: var(--color-neon-orange);
@@ -978,7 +979,7 @@ ul {
 }
 
 /* Adjust orange variants border card wrappers */
-.card-wrapper:nth-child(2):hover .project-info {
+.projects-grid .card-wrapper:nth-child(even):hover .project-info {
   border-color: rgba(255, 122, 0, 0.25);
 }
 
@@ -1037,7 +1038,7 @@ ul {
   text-shadow: var(--glow-red);
 }
 
-.card-wrapper:nth-child(2) .project-link:hover {
+.projects-grid .card-wrapper:nth-child(even) .project-link:hover {
   color: var(--color-neon-orange);
   text-shadow: var(--glow-orange);
 }

@@ -514,6 +514,89 @@
             </div>
           </div>
         </div>
+
+        <!-- Project 4: Travel Vlog Guide -->
+        <div class="card-wrapper reveal reveal-delay-3">
+          <div class="project-card">
+            <div class="project-visual">
+              <svg class="project-svg" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background dashed route path -->
+                <path d="M45,45 Q115,85 190,45" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"
+                  stroke-dasharray="4 4" />
+
+                <!-- YouTube Video screen (left) -->
+                <rect x="20" y="25" width="55" height="38" rx="4" fill="none" stroke="#2a2a35" stroke-width="2" />
+                <polygon points="42,38 42,50 54,44" fill="var(--color-neon-orange)"
+                  filter="drop-shadow(0 0 4px var(--color-neon-orange))" />
+
+                <!-- Gemini sparkles (above video and route) -->
+                <path d="M90,25 L92,29 L96,31 L92,33 L90,37 L88,33 L84,31 L88,29 Z" fill="var(--color-neon-orange)"
+                  opacity="0.8" filter="drop-shadow(0 0 3px var(--color-neon-orange))" />
+                <path d="M140,20 L141.5,23 L144.5,24.5 L141.5,26 L140,29 L138.5,26 L135.5,24.5 L138.5,23 Z"
+                  fill="var(--color-neon-orange)" opacity="0.6"
+                  filter="drop-shadow(0 0 2px var(--color-neon-orange))" />
+
+                <!-- Smart Phone showing Itinerary App (center) -->
+                <rect x="95" y="15" width="50" height="90" rx="8" fill="none" stroke="var(--color-neon-red)"
+                  stroke-width="2" filter="drop-shadow(0 0 5px var(--color-neon-red))" />
+                <rect x="112" y="15" width="16" height="4" rx="2" fill="var(--color-neon-red)" />
+                <!-- Screen UI Lines -->
+                <line x1="103" y1="28" x2="137" y2="28" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                <!-- Itinerary Items inside screen -->
+                <rect x="103" y="36" width="34" height="12" rx="2" fill="none" stroke="rgba(255,122,0,0.4)"
+                  stroke-width="1" />
+                <line x1="107" y1="42" x2="125" y2="42" stroke="var(--color-neon-orange)" stroke-width="1.5" />
+                <rect x="103" y="52" width="34" height="12" rx="2" fill="none" stroke="rgba(255,0,60,0.3)"
+                  stroke-width="1" />
+                <line x1="107" y1="58" x2="130" y2="58" stroke="var(--color-neon-red)" stroke-width="1.5" />
+                <rect x="103" y="68" width="34" height="12" rx="2" fill="none" stroke="rgba(255,255,255,0.15)"
+                  stroke-width="1" />
+                <line x1="107" y1="74" x2="120" y2="74" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" />
+
+                <!-- Map Pin with details (right) -->
+                <path
+                  d="M185,35 C177,35 170,42 170,50 C170,62 185,77 185,77 C185,77 200,62 200,50 C200,42 193,35 185,35 Z"
+                  fill="none" stroke="var(--color-neon-red)" stroke-width="2"
+                  filter="drop-shadow(0 0 5px var(--color-neon-red))" />
+                <circle cx="185" cy="48" r="4" fill="var(--color-neon-orange)"
+                  filter="drop-shadow(0 0 3px var(--color-neon-orange))" />
+                <!-- Nearby Places dots -->
+                <circle cx="210" cy="40" r="3" fill="var(--color-neon-orange)" opacity="0.8"
+                  filter="drop-shadow(0 0 3px var(--color-neon-orange))" />
+                <circle cx="172" cy="72" r="3" fill="var(--color-neon-red)" opacity="0.8"
+                  filter="drop-shadow(0 0 3px var(--color-neon-red))" />
+                <circle cx="205" cy="65" r="3" fill="#fff" opacity="0.8" filter="drop-shadow(0 0 3px #fff)" />
+
+                <!-- Connection indicators -->
+                <path d="M80,44 C90,44 88,38 95,38" fill="none" stroke="var(--color-neon-orange)" stroke-width="1.5"
+                  stroke-dasharray="2 2" />
+                <path d="M145,62 C155,62 160,50 170,50" fill="none" stroke="var(--color-neon-red)" stroke-width="1.5"
+                  stroke-dasharray="2 2" />
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">React Native</span>
+                <span class="project-tag">FastAPI</span>
+                <span class="project-tag">Gemini API</span>
+                <span class="project-tag">OSM</span>
+              </div>
+              <h3 class="project-title">Travel Vlog Guide</h3>
+              <p class="project-desc">
+                An AI-powered mobile app that transforms YouTube travel vlogs into complete itineraries. Extracts
+                transcripts, uses Google Gemini to locate destinations, geocodes coordinates automatically, pulls nearby
+                hotels, restaurants, and attractions, and offers one-tap navigation via device GPS.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/buddikadev/travel-vlog-guide-backend" target="_blank"
+                  rel="noopener noreferrer" class="project-link" aria-label="View Backend Code"><i
+                    data-lucide="github"></i> Backend</a>
+                <a href="https://github.com/buddikadev/travel-app-mobile" target="_blank" rel="noopener noreferrer"
+                  class="project-link" aria-label="View Mobile App Code"><i data-lucide="github"></i> Mobile App</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
